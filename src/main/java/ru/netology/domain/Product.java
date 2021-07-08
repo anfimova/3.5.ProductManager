@@ -1,11 +1,9 @@
 package ru.netology.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Data;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Data
 
 public class Product {
@@ -14,8 +12,8 @@ public class Product {
     private String title;
     private int price;
 
-    public Product(String name) {
-        this.title = name;
+    public Product(String title) {
+        this.title = title;
     }
 
 }

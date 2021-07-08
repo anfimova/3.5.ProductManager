@@ -8,13 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductRepositoryTest {
     private ProductRepository repository = new ProductRepository();
-    private Book coreJava = new Book();
+    private Book book = new Book();
 
     @Test
     public void shouldSaveOneItem() {
-        repository.save(coreJava);
-
-        Product[] expected = new Product[]{coreJava};
+        repository.save(book);
+        Product[] expected = new Product[]{book};
         Product[] actual = repository.findAll();
         assertArrayEquals(expected, actual);
     }

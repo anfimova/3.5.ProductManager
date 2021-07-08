@@ -7,7 +7,6 @@ import ru.netology.repository.ProductRepository;
 
 public class ProductManager {
 
-//    private Product[] products = new Product[0];
     private ProductRepository repository;
 
     public ProductManager(ProductRepository repository) {
@@ -15,10 +14,6 @@ public class ProductManager {
     }
 
     public void add(Product product) {
-//        Product[] tmp = new Product[products.length + 1];
-//        System.arraycopy(products, 0, tmp, 0, products.length);
-//        tmp[tmp.length - 1] = product;
-//        products = tmp;
         repository.save(product);
     }
 
