@@ -16,7 +16,7 @@ class ProductManagerTest {
     private Product two = new Book("TwoTitle", "TwoAuthor");
     private Product three = new Smartphone("ThreeTitle", "ThreeFirm");
     private Product four = new Smartphone("FourTitle", "FourFirm");
-    private Product five = new Product();
+    private Product five = new Product("Five");
 
     @BeforeEach
     void setUp() {

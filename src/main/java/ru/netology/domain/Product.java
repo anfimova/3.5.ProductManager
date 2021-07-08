@@ -16,4 +16,11 @@ public class Product {
         this.title = title;
     }
 
+    public boolean matches(String search) {
+        if (title.contains(search)) {
+            return true;
+        }
+        return false;
+    }
+
 }
